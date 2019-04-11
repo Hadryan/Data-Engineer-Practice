@@ -45,3 +45,4 @@ songplays Records log data associated with song plays i.e. records with page Nex
 - time Timestamps of records in songplays broken down into specific units (start_time, hour, day, week, month, year, weekday)
 
 **Schema Design**![](assets/README-551077b2.png width=100)
+<img src="pic/schema.png" width=100>

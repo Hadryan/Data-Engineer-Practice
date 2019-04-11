@@ -44,4 +44,4 @@ songplays Records log data associated with song plays i.e. records with page Nex
 - artists Artists in music database (artist_id, name, location, lattitude, longitude)
 - time Timestamps of records in songplays broken down into specific units (start_time, hour, day, week, month, year, weekday)
 
-**Schema Design**![](assets/README-551077b2.png width=100, height=100)
+**Schema Design**![](assets/README-551077b2.png width=100)

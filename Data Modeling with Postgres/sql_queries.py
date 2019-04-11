@@ -38,7 +38,7 @@ artist_table_create = ("""CREATE TABLE IF NOT EXISTS artists (artist_id VARCHAR 
                       artist_latitude VARCHAR, \
                       artist_longitude VARCHAR);""")
 
-time_table_create = ("""CREATE TABLE IF NOT EXISTS time (start_time TIME, \
+time_table_create = ("""CREATE TABLE IF NOT EXISTS time (start_time TIME PRIMARY KEY, \
                     hour INTEGER, \
                     day INTEGER, \
                     week INTEGER, \
@@ -53,7 +53,11 @@ songplay_table_insert = ("""INSERT INTO songplays (start_time, user_id, level, s
                         VALUES (%s, %s, %s, %s, %s, %s, %s, %s) ON CONFLICT DO NOTHING""")
 
 user_table_insert = ("""INSERT INTO users (user_id, first_name, last_name, gender, level) \
-                    VALUES (%s, %s, %s, %s, %s) ON CONFLICT (user_id) DO UPDATE SET level=EXCLUDED.level""")
+                    VALUES (%s, %s, %s, %s, %s) ON CONFLICT (user_id) DO UPDATE SET \
+                    first_name = users.first_name, \
+                    last_name = users.last_name, \
+                    gender = users.gender,
+                    level=EXCLUDED.level""")
 
 song_table_insert = ("""INSERT INTO songs (song_id, title, artist_id, year, duration) \
                     VALUES (%s, %s, %s, %s, %s) ON CONFLICT DO NOTHING""")

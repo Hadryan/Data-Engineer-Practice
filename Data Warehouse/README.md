@@ -62,7 +62,7 @@ artists - artists in music database, including artist_id, name, location, lattit
 time - timestamps of records in songplays broken down into specific units, including start_time, hour, day, week, month, year, weekday
 ```
 
-<img src="pic/schema_datawarehouse.png" width=500, height=600>
+<img src="pic/schema_datawarehouse.png" width=700, height=600>
 
 **Project Files**
 

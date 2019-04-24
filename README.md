@@ -6,7 +6,7 @@ Create relational and NoSQL data models to fit the diverse needs of data consume
 
 - Project: [Data Modeling with Postgres](https://github.com/mzcolor001/Data-Engineer-Practice/tree/master/Data%20Modeling%20with%20Postgres)
 - Project: [Data Modeling with Apache Cassandra](https://github.com/mzcolor001/Data-Engineer-Practice/tree/master/Data%20Modeling%20with%20Apache%20Cassandra)
-
+- Project: [Data Warehouse](https://github.com/mzcolor001/Data-Engineer-Practice/tree/master/Data%20Warehouse)
 ## Cloud Data Warehouses ##
 - Project: Data Warehouse
 

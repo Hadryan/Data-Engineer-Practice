@@ -36,7 +36,7 @@ staging_events_table_create= ("""CREATE TABLE IF NOT EXISTS staging_events (arti
                                  sessionId       INT, \
                                  song            TEXT, \
                                  status          INT, \
-                                 ts              INT, \
+                                 ts              BIGINT, \
                                  userAgent       TEXT, \
                                  userId          TEXT);
 """)
@@ -56,9 +56,9 @@ staging_songs_table_create = ("""CREATE TABLE IF NOT EXISTS staging_songs (num_s
 songplay_table_create = ("""CREATE TABLE IF NOT EXISTS fact_songplay (songplay_id INT PRIMARY KEY, \
                             start_time      DATE NOT NULL, \
                             user_id         TEXT NOT NULL, \
-                            level           TEXT NOT NULL, \
-                            song_id         TEXT NOT NULL, \
-                            artist_id       TEXT NOT NULL, \
+                            level           TEXT, \
+                            song_id         TEXT, \
+                            artist_id       TEXT, \
                             session_id      INT, \
                             location        TEXT, \
                             user_agent      TEXT);
@@ -75,13 +75,13 @@ user_table_create = ("""CREATE TABLE IF NOT EXISTS dim_users (user_id TEXT PRIMA
 
 song_table_create = ("""CREATE TABLE IF NOT EXISTS dim_songs (song_id TEXT PRIMARY KEY, \
                         title       TEXT, \
-                        artist_id   TEXT NOT NULL, \
+                        artist_id   TEXT, \
                         year        INT, \
                         duration    FLOAT);
 """)
 
 artist_table_create = ("""CREATE TABLE IF NOT EXISTS dim_artists (artist_id TEXT PRIMARY KEY, \
-                          name      TEXT NOT NULL, \
+                          name      TEXT, \
                           location  TEXT, \
                           latitude  FLOAT, \
                           longitude FLOAT);

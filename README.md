@@ -13,7 +13,7 @@ Use ETL to build databases in PostgreSQL and Apache Cassandra.
 - Project: [Data Warehouse](https://github.com/mzcolor001/Data-Engineer-Practice/tree/master/Data%20Warehouse)
 
 ## Data Lakes with Spark ##
-- Project: [Data Lake](https://github.com/mzcolor001/Data-Engineer-Practice/tree/master/Data%20Lakes%20with%20Spark)
+- Project: [Data Lakes with Spark](https://github.com/mzcolor001/Data-Engineer-Practice/tree/master/Data%20Lakes%20with%20Spark)
 - Project: Optimize Your GitHub Profile
 
 ## Data Pipelines with Airflow ##

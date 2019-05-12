@@ -37,8 +37,6 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 
 **Schema for Song Play Analysis**
 
-Using the song and log datasets, you'll need to create a star schema optimized for queries on song play analysis. This includes the following tables.
-
 <img src="pic/schema_datawarehouse.png" width=500, height=600>
 
 **Fact Table**

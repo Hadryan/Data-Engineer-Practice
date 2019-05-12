@@ -37,7 +37,7 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 
 **Schema for Song Play Analysis**
 
-<img src="pic/schema_datawarehouse.png" width=500, height=600>
+<img src="pic/schema_datawarehouse.png" width=600, height=600>
 
 **Fact Table**
 - songplays - records in log data associated with song plays i.e. records with page NextSong

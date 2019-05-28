@@ -14,7 +14,6 @@ Use ETL to build databases in PostgreSQL and Apache Cassandra.
 
 ## Data Lakes with Spark ##
 - Project: [Data Lakes with Spark](https://github.com/mzcolor001/Data-Engineer-Practice/tree/master/Data%20Lakes%20with%20Spark)
-- Project: Optimize Your GitHub Profile
 
 ## Data Pipelines with Airflow ##
 - Project: Data Pipelines
